@@ -1,0 +1,484 @@
+{% extends "navbarfaculty.html" %}
+{% block content %}
+<style>
+	form label{
+		color: #000;
+		font-size: 20px;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+	.radio-inline{
+		color: #444;
+		font-size: 16px;
+		padding-top:0
+	}
+    .form-container
+        {
+         background-color: #fff;
+         box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+         border-radius: 8px;    
+         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+       }
+</style>
+<section id="main-content">
+      <section class="wrapper">
+<div class="row">
+          <div class="col-sm-6">
+            
+              <div class="imagebg"></div>
+<div class="row " style="margin-top: 50px">
+    <div class="col-md-12 col-md-offset-6 form-container">
+    	<h3 class="text-center text-info">{{ error }}</h3>
+        <h1 style="margin: 0;padding: 0">DINNER FEEDBACK</h1><hr>
+        <form role="form"  method="post" action= {{ url_for('facultysubmit_dinner_feedback') }}>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+					<div class="row">
+                <div class="col-sm-12 form-group">
+					<b>Date</b> <input type="date" name="date" required>
+                </div>
+            </div>
+		
+                <label> Plain Rice</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Dry Curry</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Daal</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Wet Curry</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Sambar/ Rasam</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> curd</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience6" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience6" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience6" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Fresh Chutney</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience7" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience7" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience7" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Papad/Salt Chillies</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience8" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience8" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience8" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Sweet</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience9" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience9" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience9" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label> Roti</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience10" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience10" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience10" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+            
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Food Quality</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience11" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience11" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience11" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Quantity Serving to Students</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience12" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience12" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience12" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Serving</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience13" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience13" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience13" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Canteen Staff Behaviour With Students</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience14" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience14" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience14" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Dining Hall/ Floor Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience15" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience15" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience15" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Dining Tables Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience16" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience16" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience16" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Plates Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience17" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience17" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience17" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Glasses Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience18" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience18" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience18" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Hand Wash area Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience19" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience19" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience19" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>Dining Hall Toilets Cleaning</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience20" id="radio_experience" value="bad" required>
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience20" id="radio_experience" value="average" required>
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience20" id="radio_experience" value="good" required>
+                    Good
+                    </label>
+                </p>
+                </div>
+			</div>
+			
+			
+			  <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" name="submit" class="btn btn-lg btn-warning btn-block" > SUBMIT </button>
+                </div>
+            </div>
+
+            </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
+    </div>
+   </section>
+</section>
+{% endblock %}

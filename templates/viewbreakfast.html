@@ -1,0 +1,49 @@
+{% extends "navbarchiefwarden.html" %}
+{% block content %}
+
+<section id="main-content">
+      <section class="wrapper">
+        <div class="row" style="text-align: center;margin-left:250px; ">
+        
+        <!-- page start-->
+        <div class="row" style="text-align: center;">
+          <div class="col-sm-8">
+            <section class="panel">
+              <header class="panel-heading">
+               <h1 style="color: red"> <b>BREAKFAST ITEMS</b></h1>
+              </header>
+              <table class="table">
+                <thead>
+                  <tr>
+                   
+                    <th style="color:brown">Idly with Sambar & Egg</th>
+                    <th style="color:brown">Any 1 Indian Breakfast</th>
+                    <th style="color:brown">Chuteney 1</th>
+                    <th style="color:brown">Chuteney 2</th>  
+                    <th style="color:brown">Tea/Milk</th>  
+					 <th style="color:brown">Delete</th>
+                  </tr>
+                </thead>
+
+                
+                </tbody>
+               {% for record in data %}
+				<tr><form class="login-form" action="{{ url_for('breakfastdelete') }}" method="post">
+				<th style="color:black">{{ record[1] }}</th><input type=hidden value="{{ record[0] }}"name=studentid />
+                    <th style="color:black">{{ record[2] }}</th>
+                    <th style="color:black">{{ record[3] }}</th>
+                    <th style="color:black">{{ record[4] }}</th>  
+                    <th style="color:black">{{ record[5] }}</th>
+					<th style="color:black"><input type="submit" class="btn btn-danger" name="submit" class="btn btn-primary btn-lg btn-block" value="Delete"></th>
+				</tr>
+				{% endfor %}
+              </table>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+       
+{% endblock %}

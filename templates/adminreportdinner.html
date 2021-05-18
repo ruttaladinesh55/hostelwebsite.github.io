@@ -1,0 +1,66 @@
+{% extends "navbaradmin.html" %}
+{% block content %}
+
+<html>
+<center>
+
+<section id="main-content">
+      <section class="wrapper">
+        
+        <!-- page start-->
+        <div class="row" style="margin-top:200px;margin-left:450px;">
+          <div class="col-sm-6">
+            <section class="panel">
+              <header class="panel-heading">
+                <h1 style="color: red"><b>FEEDBACK REPORT</b> 
+              </header>
+<div class="panel-body">
+                <form method="post" action="{{ url_for('adminreportfeedbackdinner1') }}">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">From</label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" name="from"  required>
+                    </div>
+                  </div>
+          <br>
+          <br>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">To</label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" name="to" required>
+                    </div>
+          </div>
+          <br>
+          <br>
+                    
+                 
+                   
+                    
+                      
+<!--                  <input type="submit" name="submit" value="submit">-->
+            <div class="row">
+                <div class="col-sm-4 form-group col-sm-offset-5"  >
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="submit"> SUBMIT </button>
+                </div>
+            </div>
+
+                </section>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+  </center>
+    </html>
+
+    <!--main content end-->
+       
+{% endblock %}

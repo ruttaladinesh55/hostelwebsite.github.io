@@ -1,0 +1,103 @@
+<html>
+	<body>
+<!--		<a href="{{ url_for('login') }}">login</a>-->
+		
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hostel Food Management system</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:blue;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>TRUSTED AUTHENTICATION OF HOSTELERS USING BIOMETRIC FACE RECOGNITION FOR FOOD MANAGEMENT SYSTEM OF HOSTELS WITH OPENCV</h1>
+  
+</div>
+ <center>
+<div class="topnav">
+	 <a href="{{ url_for('adminlogin') }}" target="_blank">Admin</a>
+	 <a href="{{ url_for('chiefwardenlogin') }}" target="_blank">Chiefwarden</a>
+   <a href="{{ url_for('login') }}" target="_blank">Student</a>
+	 <a href="{{ url_for('facultylogin') }}" target="_blank">Faculty</a>
+	 <a href="{{ url_for('managementlogin') }}" target="_blank">Management</a>
+     
+</div>
+</center>
+<img src="static/images/hostel.jpg" width=1700px height=700px>
+  
+</body>
+</html>
+
+		{{ data }}
+	</body>
+</html>

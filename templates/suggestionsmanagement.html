@@ -1,0 +1,35 @@
+{% extends "navbarmanagement.html" %}
+{% block content %}
+
+<section id="main-content">
+      <section class="wrapper">
+
+         <div class="row" style="text-align: center;margin-left:350px; ">
+        <!-- page start-->
+        <div class="row">
+          <div class="col-sm-6">
+            <section class="panel">
+              <header class="panel-heading">
+               <h1><b style="color:red"> SUGGESTIONS </b> </h1>
+              </header>
+              <table class="table">
+                <tr >
+        <td style="color:black">
+          {% for i in data %}
+               {{i[1]}}
+               <br>
+          {% endfor %}
+        </td>
+        </tr>
+          <br>
+      
+              </table>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+       
+{% endblock %}

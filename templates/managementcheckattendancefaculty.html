@@ -1,0 +1,110 @@
+{% extends "navbarmanagement.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="author" content="GeeksLabs">
+  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Management/Hostel Food management system</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap theme -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- date picker -->
+
+  <!-- color picker -->
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
+    <![endif]-->
+
+    <!-- =======================================================
+      Theme Name: NiceAdmin
+      Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      Author: BootstrapMade
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+
+<body>
+
+  <!-- container section start -->
+  <section id="container" class="">
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        
+        <div class="row" style="text-align: center;margin-left: 350px; " >-
+          <div class="col-lg-6">
+            <section class="panel">
+              <header>
+                <h2 style="color:red"><b>CHECK ATTENDANCE</b></h2> 
+              </header>
+              <div  >
+                <table class="table table-bordered">
+    <thead>
+      <tr>
+      
+        <th style="color:brown">BREAKFAST</th>
+        <th style="color:brown">LUNCH</th>
+        <th style="color:brown">DINNER</th>
+      </tr>
+    </thead>
+    <tbody>
+          
+          <td style="color:black"> 
+            {{ data1[0][0]}}
+            </td>
+          
+            <td style="color:black"> 
+            {{ data2[0][0] }}
+            </td style="color:black">
+    <td>{{ data3[0][0] }}</td>
+     </tbody>
+  </table>
+                    </div>
+            
+                </section>
+              </div>
+            </div>
+          <div>
+        </div>
+        <!-- page end-->
+      </section>
+       
+                    </div>
+            
+                </section>
+              </div>
+            </div>
+          <div>
+        </div>
+        <!-- page end-->
+      </section>
+</section>
+
+
+</body>
+
+</html>
+{% endblock %}

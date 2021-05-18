@@ -1,0 +1,57 @@
+{% extends "navbarfaculty.html" %}
+{% block content %}
+
+<section id="main-content">
+      <section class="wrapper">
+        
+        <!-- page start-->
+        <div class="row" style="text-align: center;">
+          <div class="col-lg-12">
+                       <section class="panel">
+              <header class="panel-heading">
+               <h1 style="color:red"><b>UPDATE PROFILE</b></h1>
+              </header>
+              <div class="panel-body">
+                <form method="post" action="{{ url_for('facultyupdateprofile') }}">
+                    <b style="color: #f00">{{ data }}</b>
+
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown"><b>Old Password</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="old" required>  
+					  </div>
+					  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown"><b>New Password</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="new"  required>
+                    </div>
+                  </div>
+					  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown"><b>Confirm New Password</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="confirm"  required>
+                    </div>
+                  </div>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                            <br>
+                  <br>
+                 <div class="row">
+                <div class="col-sm-2 form-group col-sm-offset-5"  >
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="submit"> SUBMIT </button>
+                </div>
+            </div>
+					  
+				  </form>
+                </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+       
+{% endblock %}

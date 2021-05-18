@@ -1,0 +1,206 @@
+{% extends "navbaradmin.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="author" content="GeeksLabs">
+  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Admin/Hostel Food management system</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap theme -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- date picker -->
+
+  <!-- color picker -->
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
+    <![endif]-->
+
+    <!-- =======================================================
+      Theme Name: NiceAdmin
+      Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      Author: BootstrapMade
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+
+<body>
+
+  <!-- container section start -->
+  <section id="container" class="">
+    <!--header start-->
+    <!--sidebar end-->
+
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <form method="post">
+          <div class="col-lg-12">
+			  {% if error %}
+			  	<div class="alert alert-success" role="alert">
+				  {{ error }}
+				</div>
+			  {% endif %}
+        <div class="row" style="text-align: center;">
+            <section class="panel">
+              <header class="panel-heading">
+                <h1 style="color:red;"><b>REGISTRATION FORM</b></h1>
+              </header>
+              <div class="panel-body">
+                <form method="post" action="{{ url_for('registrationformfaculty1') }}">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="name"  required>
+                    </div>
+                  </div>
+					<br>
+					<br>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Roll No</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="rollno" required>
+                    </div>
+					</div>
+					<br>
+					<br>
+                      <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Gender</label>
+                    <div class="col-sm-3">
+                        <label><b>Male</b></label>
+                      <input type="radio" class="" value="male" name="gender" required>
+                        <label><b>Female</b></label>
+                       <input type="radio" class="" value="female" name="gender" required>
+                    </div>
+                  </div>
+                      <br>
+                      <br>
+                     <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Mail Id</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="mailid" required>
+                    </div>
+                  </div>
+					<br>
+					<br>
+                     <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Phone No</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="phoneno" required>
+                    </div>
+                  </div>
+					<br>
+					<br>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Course</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="course" required>
+                    </div>
+                  </div>
+					<br>
+					<br>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Specalization</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" name="specalization" required>
+                    </div>
+                  </div>
+					<br>
+					<br>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Mess Type</label>
+                    <div class="col-sm-3">
+                        <label><b>North</b></label>
+                      <input type="radio" class="" value="north" name="messtype" required>
+                        <label><b>South</b></label>
+                       <input type="radio" class="" value="south" name="messtype" required>
+                    </div>
+                  </div>
+                      <br>
+                      <br>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label"><b style="color:brown">Password</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" name="password" required>
+                    </div>
+                  </div>
+                      <br>
+                      <br>
+<!--                  <input type="submit" name="submit" value="submit">-->
+					  <div class="row">
+                <div class="col-sm-2 form-group col-sm-offset-5"  >
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="submit"> SUBMIT </button>
+                </div>
+            </div>
+                </section>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+        <form method="post" action="{{ url_for('capture_imgs') }}">
+          <button type="submit" class="btn btn-lg btn-warning btn-block" name="capture_imgs" value="submit" style="width:300px;margin-left:300px;"> capture_imgs </button>
+        </form>
+      </section>
+    </section>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- nice scroll -->
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+
+  <!-- jquery ui -->
+  <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+
+  <!--custom checkbox & radio-->
+  <script type="text/javascript" src="js/ga.js"></script>
+  <!--custom switch-->
+  <script src="js/bootstrap-switch.js"></script>
+  <!--custom tagsinput-->
+  <script src="js/jquery.tagsinput.js"></script>
+
+  <!-- colorpicker -->
+
+  <!-- bootstrap-wysiwyg -->
+  <script src="js/jquery.hotkeys.js"></script>
+  <script src="js/bootstrap-wysiwyg.js"></script>
+  <script src="js/bootstrap-wysiwyg-custom.js"></script>
+  <!-- ck editor -->
+  <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
+  <!-- custom form component script for this page-->
+  <script src="js/form-component.js"></script>
+  <!-- custome script for all page -->
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
+{% endblock %}

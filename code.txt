@@ -1,0 +1,35 @@
+1.manaki feedback form lo background lo white color poyindhi kadah attendance ki vochinattuu...dani ki ee code 
+
+   eedhi feedback lo breakfast,lunch,dinner student ki,faculty lo styles lo add cheyuuu 
+
+ .form-container
+        {
+         background-color: #fff;
+         box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+         border-radius: 8px;	
+         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+       }
+
+
+
+
+2.eedhi background image code - statics lo style.css lo 1st na body vuntadhi chudu akada copy paste cheyuu
+
+body {
+    
+    background-image: url("../images/food.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: #797979;
+
+/*    background: #eeeeee;*/
+
+    font-family: 'Lato', sans-serif;
+
+    padding: 0px !important;
+
+    margin: 0px !important;
+
+    font-size:14px !important;    
+
+}

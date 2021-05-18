@@ -1,0 +1,33 @@
+{% extends "navbarmanagement.html" %}
+{% block content %}
+
+<html>
+<section id="main-content">
+      <section class="wrapper">
+        
+        <!-- page start-->
+        <div class="row">
+          <div class="col-sm-6">
+            <section class="panel">
+              <header class="panel-heading">
+                FEEDBACK REPORT 
+              </header>
+              <body>
+                <form method="post" action="{{ url_for('managementreportfeedback1') }}">
+                  From<input type="date" name="from">
+                  To<input type="date" name="to">
+                  <br>
+                  <br>
+                  <input type="submit" name="submit" value="SUBMIT"></form>
+                </body>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    </html>
+
+    <!--main content end-->
+       
+{% endblock %}

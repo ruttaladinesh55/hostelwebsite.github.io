@@ -1,0 +1,42 @@
+{% extends "navbarchiefwarden.html" %}
+{% block content %}
+<html>
+ <head>
+ <title> Requirement Issues</title>
+ </head>
+<h1 align="center">Requirement Issues</h1>
+<form method="post" action="{{ url_for('requirement')}}">
+<table align="center">
+<tr>
+<td align="center">
+	<h1 style="color:red"><b>ISSUES</b></h1>
+</td>
+	<br>
+	</tr>
+<tr>
+<td align="center">
+	<b>Date</b><input type="date" name="date">
+</td>
+	<br>
+	</tr>	
+	<tr>
+	<td><textarea name="issues" cols="60" rows="20">
+</textarea></td>  
+	<br>
+<td></td>	
+
+	
+         
+</tr>
+<tr><td align="center" colspan="10" >
+<div class="row">
+                <div class="col-sm-4 form-group col-sm-offset-5"  >
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="submit"> SUBMIT </button>
+                </div>
+            </div>
+</td>
+	</tr>
+</table>
+</form>
+</html>
+{% endblock %}

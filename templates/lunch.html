@@ -1,0 +1,56 @@
+{% extends "navbarstudent.html" %}
+{% block content %}
+
+<!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        
+        <!-- page start-->
+        <div class="row" style="text-align: center;">
+          <div class="col-sm-12">
+            <section class="panel">
+              <header class="panel-heading">
+                <h1 style="color:red"><b>LUNCH ITEMS</h1>
+              </header>
+              <table class="table">
+                <thead>
+                  <tr>
+                   
+                    <th style="color:brown">Plan Rice</th>
+                    <th style="color:brown">Dry Curry</th>
+                    <th style="color:brown">Daal</th>
+                    <th style="color:brown">Wet Curry</th>
+                    <th style="color:brown">Sambar/Rasam</th>
+                    <th style="color:brown">Curd</th>
+                    <th style="color:brown">Fresh Chutney</th>
+                    <th style="color:brown">Papad/Salt Chillies</th>
+                    <th style="color:brown">Sweet</th>
+                    <th style="color:brown">Roti</th> 
+                  </tr>
+                </thead>
+				
+				</tbody>
+               {% for record in data %}
+				<tr>
+				<th style="color:black">{{ record[1] }}</th>
+                    <th style="color:black">{{ record[2] }}</th>
+                    <th style="color:black">{{ record[3] }}</th>
+                    <th style="color:black">{{ record[4] }}</th>  
+                    <th style="color:black">{{ record[5] }}</th> 
+					<th style="color:black">{{ record[6] }}</th>
+                    <th style="color:black">{{ record[7] }}</th>
+                    <th style="color:black">{{ record[8] }}</th>  
+                    <th style="color:black">{{ record[9] }}</th> 
+					<th style="color:black">{{ record[10] }}</th> 
+					
+				</tr>
+				{% endfor %}
+              </table>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+{% endblock %}

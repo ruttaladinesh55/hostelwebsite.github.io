@@ -1,0 +1,369 @@
+{% extends "navbarmanagement.html" %}
+{% block content %}
+
+<section id="main-content">
+      <section class="wrapper">
+        
+        <!-- page start-->
+        <div class="row"  style="text-align: center;>
+          <div class="col-sm-15" >
+            <section class="panel">
+              <header class="panel-heading">
+                <h1 style="color: red"><b>LUNCH ITEMS</b></h1>
+              </header>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                      <th></th>
+					  <th style="color:brown">Plain Rice</th>
+        		      <th style="color:brown">Dry Curry</th>
+        			  <th style="color:brown">Daal</th>
+					  <th style="color:brown">Wet curry</th>
+					  <th style="color:brown">Sambar/Rasam</th>
+					  <th style="color:brown">Curd</th>
+					  <th style="color:brown">Fresh Chuteney</th>
+					  <th style="color:brown">Papad/Salt Chillies</th>
+					  <th style="color:brown">Sweet</th>
+					  <th style="color:brown">Roti</th>
+					  <th style="color:brown">Food Quality</th>
+					  <th style="color:brown">Quantity Serving to Students</th>
+					  <th style="color:brown">Serving</th>
+					  <th style="color:brown">Canteen Staff Behaviour with Students</th>
+					  <th style="color:brown">Dining Hall/Floor Cleaning </th>
+					  <th style="color:brown">Dining Tables Cleaning</th>
+					  <th style="color:brown">Plates Cleaning</th>
+					  <th style="color:brown">Glasses Cleaning</th>
+					  <th style="color:brown">Hand Wash area Cleaning</th> 
+					  <th style="color:brown">Dining Hall Toilets Cleaning</th>
+                  </tr>
+                </thead>
+
+                
+                <tbody>
+				  <tr>
+					<td style="color:brown"><b>Good</td>
+					<td style="color:green">
+						{% for record in feedbackitem1 %}
+						{% if record[1]=='good' %}{{ record[0] }}{% else %} {% endif %}
+						{% endfor %}
+						
+					</td>
+					<td style="color:green"> 
+						{% for record in feedbackitem2 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					
+					  <td style="color:green"> 
+						{% for record in feedbackitem3 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem4 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem5 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem6 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem7 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem8 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem9 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem10 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem11 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem12 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem13 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem14 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem15 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem16 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem17 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem18 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem19 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td style="color:green"> 
+						{% for record in feedbackitem20 %}
+						{% if record[1]=='good' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					
+				  </tr>
+				  <tr>
+					<td style="color:brown"><b>Average</td>
+					<td style="color:orange">
+						{% for record in feedbackitem1 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					</td>
+					<td style="color:orange"> 
+						{% for record in feedbackitem2 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					<td style="color:orange">  
+						{% for record in feedbackitem3 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem4 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem5 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem6 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem7 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem8 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem9 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem10 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem11 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem12 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem13 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem14 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem15 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					   <td style="color:orange">  
+						{% for record in feedbackitem16 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem17 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem18 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem19 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td style="color:orange">  
+						{% for record in feedbackitem20 %}
+						{% if record[1]=='average' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					
+					
+					</tr>
+				  <tr>
+					<td style="color:brown"><b>Bad</td>
+					 <td>
+						{% for record in feedbackitem1 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					 </td>
+					 <td> 
+						{% for record in feedbackitem2 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					 <td>
+						{% for record in feedbackitem3 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %} 
+					  </td>
+					  <td>  
+						{% for record in feedbackitem4 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem5 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem6 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem7 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem8 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem9 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem10 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem11 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem12 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem13 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem14 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem15 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem16 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem17 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem18 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem19 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					  <td>  
+						{% for record in feedbackitem20 %}
+						{% if record[1]=='bad' %}{{ record[0] }} {% endif %}
+						{% endfor %}
+					  </td>
+					 
+					 
+			   </tr>
+				</tbody>
+				</table>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+       
+{% endblock %}

@@ -1,0 +1,170 @@
+{% extends "navbarchiefwarden.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+  <meta name="author" content="GeeksLabs">
+  <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Cheif warden/Hostel Food management system</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap theme -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!--external css-->
+  <!-- font icon -->
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- date picker -->
+
+  <!-- color picker -->
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
+    <![endif]-->
+
+    <!-- =======================================================
+      Theme Name: NiceAdmin
+      Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      Author: BootstrapMade
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+
+<body>
+
+  <!-- container section start -->
+  <section id="container" class="">
+
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <form method="post" action="{{ url_for('adddinner1') }}">
+        <div class="row" style="text-align: center;">
+          <div class="col-lg-12">
+			   {% if error %}
+			  	<div class="alert alert-success" role="alert">
+				  {{ error }}
+				</div>
+			  {% endif %}
+            <section class="panel">
+              <header class="panel-heading">
+               <h1 style="color: red"><b> DINNER ITEMS LIST</b></h1>
+              </header>
+              <div class="panel-body">
+                <form class="form-horizontal " method="get">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Plan Rice</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="item1" required>
+						
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Dry Curry</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="item2" required>
+						                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Daal</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="item3" required>
+						
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Wet Curry</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item4" required>
+						
+	
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Sambar/Rassam</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item5" required>
+						
+					                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Curd</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item6" required>
+						
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Fresh Chutney</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item7" required>
+						
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Papad/Salt Chillies</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item8">
+						
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Sweet</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item9">
+						                   </div>
+                  </div>
+                    <div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Roti</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="text" value="" name="item10">
+					
+                    </div>
+                  </div>
+					<div class="form-group">
+                    <label class="col-sm-2 control-label" style="color:brown">Date</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" id="focusedInput" type="date" value="" name="date">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="row">
+                <div class="col-sm-2 form-group col-sm-offset-5"  >
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="submit"> SUBMIT </button>
+                </div>
+            </div>
+                </section>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+ 
+</body>
+
+</html>
+{% endblock %} 
